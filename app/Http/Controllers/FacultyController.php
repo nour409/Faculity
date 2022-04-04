@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Faculty;
+use App\Models\Skafea;
 
 class FacultyController extends Controller
 {
@@ -14,9 +15,9 @@ class FacultyController extends Controller
      */
     public function index()
     {
-    //   $data=Faculty::all();
-      $data=55; 
-return "this is nour";
+    $data=Skafea::all();
+  return $data;   
+//return view('welcome',compact('data'));
     }
 
     /**
